@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
 
 function App() {
+  const [songs, setSongs] = useState([
+    {
+      title: "Forget me too ft. Halsey",
+      artist: "Machine Gun Kelly",
+      img_src: "./images/song-1.jpg",
+      src: "./music/Let-Me-Down-Slowly.mp3"
+    },
+    {
+      title: "Song 2",
+      artist: "Artist liar",
+      img_src: "./images/song-2.jpg",
+      src: "./music/Bad-Liar.mp3"
+    },
+    {
+      title: "Song 3",
+      artist: "Taylor Swift",
+      img_src: "./images/song-3.jpg",
+      src: "./music/Blank-Space.mp3"
+    },
+    {
+      title: "Song 4",
+      artist: "Taylor Swift",
+      img_src: "./images/song-4.jpg",
+      src: "./music/Look-What-You Made-Me-Do.mp3"
+    }
+  ])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <p>app</p>
     </div>
   );
 }
