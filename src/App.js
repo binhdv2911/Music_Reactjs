@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Player from './components/Player'
 
 function App() {
   const [songs, setSongs] = useState([
@@ -26,10 +27,16 @@ function App() {
       img_src: "./images/song-4.jpg",
       src: "./music/Look-What-You Made-Me-Do.mp3"
     }
-  ])
+  ]);
+  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [nextSongIndex, setNextSongIndex] = useState(currentSongIndex + 1);
+
+
   return (
     <div className="App">
-     <p>app</p>
+     <Player 
+     song={songs[currentSongIndex]}
+     nextSong = {songs[nextSongIndex]}/>
     </div>
   );
 }
