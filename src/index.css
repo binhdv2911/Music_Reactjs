@@ -57,6 +57,7 @@ body {
     width: 100%;
     max-width: 250px;
     border-radius: 50%;
+    height: 300px;
 }
 
 .c-player--details .details-img:after {
